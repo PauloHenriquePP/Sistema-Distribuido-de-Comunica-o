@@ -21,9 +21,9 @@ def update_chat(msg, state):
 
     chatlog.config(state=NORMAL)
 
-    if state == 0:  # YOU
+    if state == 0:  
         chatlog.insert(END, f"\nVocê: {msg}", "Você")
-    else:           # OTHER
+    else:           
         chatlog.insert(END, f"\nCliente: {msg}", "Outro")
 
     chatlog.config(state=DISABLED)
@@ -63,7 +63,7 @@ def GUI():
     chatlog = Text(gui, bg="white", font=("Segoe UI", 10), wrap=WORD)
     chatlog.config(state=DISABLED)
 
-    # estilos
+    
     chatlog.tag_config("you", background="#CCCCCC", foreground="black")
     chatlog.tag_config("other", background="#DFFFD6", foreground="black")
 
