@@ -63,10 +63,6 @@ def GUI():
     chatlog = Text(gui, bg="white", font=("Segoe UI", 10), wrap=WORD)
     chatlog.config(state=DISABLED)
 
-    
-    chatlog.tag_config("you", background="#CCCCCC", foreground="black")
-    chatlog.tag_config("other", background="#DFFFD6", foreground="black")
-
     textbox = Text(gui, bg="white", height=2, font=("Segoe UI", 10))
 
     sendbutton = Button(gui, text="Enviar", bg="#5A5A5A", fg="white",

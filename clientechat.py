@@ -59,11 +59,6 @@ def GUI():
   
     chatlog = Text(gui, bg="white", font=("Segoe UI", 10), wrap=WORD)
     chatlog.config(state=DISABLED)
-
-  
-    chatlog.tag_config("you", background="#B8D4FF", foreground="black")
-    chatlog.tag_config("other", background="#E3E3E3", foreground="black")
-
    
     textbox = Text(gui, bg="white", height=2, font=("Segoe UI", 10))
 
