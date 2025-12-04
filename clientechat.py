@@ -2,7 +2,6 @@ from tkinter import *
 from socket import *
 import _thread
 
-# initialize server connection
 def initialize_client():
     s = socket(AF_INET, SOCK_STREAM)
     host = 'localhost'
